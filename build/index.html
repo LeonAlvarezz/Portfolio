@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/692702b2fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black">
+    <header id="home" class="h-screen font-nunito text-white bg-abstract-background relative">
+        <nav class=" bg-emerald-500 flex justify-between">
+          <h1 class="p-5 font-bold">Ponleu</h1>
+          <div>
+            <ul class="flex flex-row">
+              <li onclick="scrollToHome()"class="p-5 hover:bg-emerald-700 cursor-pointer ">Home</li>
+              <li onclick="scrollToPortfolio()"class="p-5 hover:bg-emerald-700 cursor-pointer">Portfolio</li>
+              <li onclick="scrollToContact()" class="p-5 hover:bg-emerald-700 cursor-pointer">Contact</li>
+            </ul>
+          </div>
+        </nav>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full font-poppins text-white">
+          <div class="flex items-center p-5 justify-around">
+            <div> 
+                <h3 class="text-xl opacity-50">Hello There,</h3>
+                <h1 class="text-4xl">My Name is Hong Narethputponleu</h1>
+                <h2 class="text-2xl mt-2 opacity-80">Software Developer</h2>
+                <button onclick="downloadFile()" class="p-4 bg-emerald-500 rounded-sm mt-4 hover:bg-emerald-700 animate-pulse transition-all ">Download CV</button>
+                <i></i>
+              </div>
+              <div>
+                <img class="animate-appear" src="/img/pf.png" width={400} height={400}></img>
+            </div>
+          </div>
+        </div>
+    </header>
+
+      <section id="portfolio" class="w-4/5 m-auto text-white">
+        <h1 class="text-3xl mt-5 font-bold">Portfolio</h1>
+        <div class="flex flex-row gap-5">
+          <div class="mt-10 p-10 bg-gray-700 w-1/2 h-50">
+            <div class="h-80 grid place-content-center">
+                <img class="animate-appear" src="/img/sea-game-logo.png" width="200px" height="200px"></img>
+            </div>
+            <h1 class="text-2xl">Event Website</h1>
+            <div class="opacity-80 mt-10 h-72">
+            <p  class="opacity-80 mt-10 ">Our full-stack website allows users to browse event listings, search for specific events, and view all the essential details. Additionally, 
+                users have the ability to add, delete, and update events according to their needs and preferences, making it the ultimate tool for managing 
+                and discovering events.</p>
+            </div>
+            <h2 class="text-xl">Technology Used: PHP Laravel</h2>
+            <div class="flex flex-row gap-5">
+                <a href="https://github.com/LeonAlvarezz/Event_Website_Laravel"><i class="fa-brands fa-github fa-fade text-3xl mt-4"></i></a>
+            </div>
+          </div>
+          <div class="mt-10 p-10 bg-gray-700 w-1/2 h-50">
+            <div class="h-80 grid place-content-center">
+                <img class="animate-appear" src="/img/enigmatic.png" ></img>
+            </div>
+            <h1 class="text-2xl">Enigmatic</h1>
+            <div class="opacity-80 mt-10 h-72">
+            <p>A clothes selling website that suitable for those who looking to spice up their fashion choice. The website allows user to view and buy product that they desired which include hoodie, beanie and t-shirt </p>
+            </div>
+            <h2 class="text-xl">Technology Used: Html, CSS, JavaScript</h2>
+            <div class="flex flex-row gap-5">
+                <a href="https://github.com/LeonAlvarezz/Enigmatic"><i class="fa-brands fa-github fa-fade text-3xl mt-4"></i></a>
+                <a href="https://leonalvarezz.github.io/Enigmatic/"><i class="fa-solid fa-code fa-fade text-3xl mt-4"></i></a>
+            </div>
+          </div>
+          <div class="mt-10 p-10 bg-gray-700 w-1/2 h-50">
+            <div class="h-80 grid place-content-center">
+                <img class="animate-appear" src="/img/tasks.png" width="300px" height="300px" ></img>
+            </div>
+            <h1 class="text-2xl">Todo List</h1>
+            <div class="opacity-80 mt-10 h-72">
+                <p>full-stack todo application is the perfect solution for anyone who wants to stay organized and on top of their to-do list. With its powerful task management features, you can easily add, delete, and update tasks to ensure that you're always on track. What's more, our app features a unique filtering system that makes it easy to know whether or not you've already added a specific task. As you type, the app automatically filters out any tasks that match the text you've entered, so
+                    you can focus on adding only new tasks. And with its user-friendly interface, our app is easy to use 
+                    no matter where you are or what you're doing.
+               </p>
+            </div>
+            <h2 class="text-xl">Technology Used: React, NextJS, Firebase</h2>
+            <div class="flex flex-row gap-5">
+                <a href="https://github.com/LeonAlvarezz/TodoApp_NextJS"><i class="fa-brands fa-github fa-fade text-3xl mt-4"></i></a>
+                <a href="https://stackblitz.com/edit/nextjs-qbjvfi?file=.eslintrc.json"><i class="fa-solid fa-code fa-fade text-3xl mt-4"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="w-4/5 m-auto text-white pb-20">
+        <h1 class="text-3xl mt-5 font-bold mb-5">Contact</h1>
+        <a href="https://www.facebook.com/leon.hong.0312">
+            <div class="flex flex-col gap-5">
+                <div class="w-full flex flex-row justify-between bg-emerald-500 rounded-full p-7 hover:bg-emerald-700 cursor-pointer">
+                <div class="flex flex-row gap-5">
+                    <i class="fa-brands fa-facebook text-3xl"></i>
+                    <h1 class="text-2xl font-bold">Facebook</h1>
+                </div>            
+                <i class="fa-solid fa-circle-right text-3xl"></i>
+            </div>
+        </a>
+
+            <a href="https://github.com/LeonAlvarezz">
+                <div class="w-full flex flex-row justify-between bg-emerald-500 rounded-full p-7 hover:bg-emerald-700 cursor-pointer">
+                    <div class="flex flex-row gap-5">
+                        <i class="fa-brands fa-github text-3xl"></i>
+                        <h1 class="text-2xl font-bold">GitHub</h1>
+                    </div>
+                        <i class="fa-solid fa-circle-right text-3xl"></i>
+                </div>
+            </a>
+
+            <a href="https://t.me/leon11037">
+                <div class="w-full flex flex-row justify-between bg-emerald-500 rounded-full p-7 hover:bg-emerald-700 cursor-pointer">
+                    <div class="flex flex-row gap-5">
+                        <i class="fa-brands fa-telegram text-3xl"></i>
+                        <h1 class="text-2xl font-bold">Telegram</h1>
+                    </div>
+                    <i class="fa-solid fa-circle-right text-3xl"></i>
+                </div>
+            </a>
+        </div>
+      </section>
+      <footer class="text-white w-4/5 m-auto font-nunito">
+        <h1>@Copyright 2023 by Hong Narethputponleu</h1>
+      </footer>
+
+
+      <script>
+        function downloadFile() {
+          const downloadLink = document.createElement('a');
+          downloadLink.setAttribute('href', 'https://drive.google.com/file/d/1trMv8Kkaz3JzWLfol4-UnHD9ryiP8kuI/view?usp=share_link');
+          downloadLink.setAttribute('download', '');
+          downloadLink.style.display = 'none';
+          document.body.appendChild(downloadLink);
+          downloadLink.click();
+          document.body.removeChild(downloadLink);
+        }
+
+        function scrollToHome() {
+          const home = document.getElementById('home');
+          const sectionTop = home.offsetTop;
+          window.scrollTo({
+            top: sectionTop,
+            behavior: 'smooth'
+          });
+        }
+
+        function scrollToPortfolio() {
+          const portfolio = document.getElementById('portfolio');
+          const sectionTop = portfolio.offsetTop;
+          window.scrollTo({
+            top: sectionTop,
+            behavior: 'smooth'
+          });
+        }
+        function scrollToContact() {
+          const contact = document.getElementById('contact');
+          const sectionTop = contact.offsetTop;
+          window.scrollTo({
+            top: sectionTop,
+            behavior: 'smooth'
+          });
+        }
+        </script>
+</body>
+</html>
