@@ -11,7 +11,7 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
         'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'abstract-background': "linear-gradient(rgba(39, 39, 39, 0.9), rgba(15, 15, 15, 0.8)), url('/img/background.jpg')"
+        'abstract-background': "linear-gradient(rgba(39, 39, 39, 0.9), rgba(15, 15, 15, 0.8)), url('/build/img/background.jpg')"
       },
       animation: {
         'appear': 'appear .5s ease-in forwards, bouncing .7s ease-in-out 1s infinite',

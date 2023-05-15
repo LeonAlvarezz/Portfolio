@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <script src="https://kit.fontawesome.com/692702b2fd.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="../dist/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Poppins&display=swap" rel="stylesheet">
@@ -24,13 +24,14 @@
           </div>
         </nav>
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full font-poppins text-white">
-          <div class="flex items-center p-5 justify-around">
+          <div class="flex flex-col-reverse sm:flex-row gap-10 items-center p-5 justify-around">
             <div> 
-                <h3 class="text-xl opacity-50">Hello There,</h3>
-                <h1 class="text-4xl">My Name is Hong Narethputponleu</h1>
-                <h2 class="text-2xl mt-2 opacity-80">Software Developer</h2>
-                <button onclick="downloadFile()" class="p-4 bg-emerald-500 rounded-sm mt-4 hover:bg-emerald-700 animate-pulse transition-all ">Download CV</button>
-                <i></i>
+                <h3 class="text-xl opacity-50 text-center sm:text-left">Hello There,</h3>
+                <h1 class="text-4xl text-center sm:text-left">My Name is Hong Narethputponleu</h1>
+                <h2 class="text-2xl mt-2 opacity-80 text-center sm:text-left">Software Developer</h2>
+                <div class="flex justify-center sm:justify-start">
+                  <button onclick="downloadFile()" class="p-4 bg-emerald-500 rounded-sm mt-4 hover:bg-emerald-700 animate-pulse transition-all">Download CV</button>
+                </div>
               </div>
               <div>
                 <img class="animate-appear" src="./img/pf.png" width={400} height={400}></img>
@@ -41,14 +42,14 @@
 
       <section id="portfolio" class="w-4/5 m-auto text-white">
         <h1 class="text-3xl mt-5 font-bold">Portfolio</h1>
-        <div class="flex flex-row gap-5">
-          <div class="mt-10 p-10 bg-gray-700 w-1/2 h-50">
+        <div class="flex basis-2 flex-col gap-5 xl:flex-row ">
+          <div class="mt-10 p-10 bg-gray-700  xl:w-1/2 h-50">
             <div class="h-80 grid place-content-center">
                 <img class="animate-appear" src="./img/sea-game-logo.png" width="200px" height="200px"></img>
             </div>
             <h1 class="text-2xl">Event Website</h1>
             <div class="opacity-80 mt-10 h-72">
-            <p  class="opacity-80 mt-10 ">Our full-stack website allows users to browse event listings, search for specific events, and view all the essential details. Additionally, 
+            <p  class="opacity-80 mt-10">Our full-stack website allows users to browse event listings, search for specific events, and view all the essential details. Additionally, 
                 users have the ability to add, delete, and update events according to their needs and preferences, making it the ultimate tool for managing 
                 and discovering events.</p>
             </div>
@@ -57,7 +58,7 @@
                 <a href="https://github.com/LeonAlvarezz/Event_Website_Laravel"><i class="fa-brands fa-github fa-fade text-3xl mt-4"></i></a>
             </div>
           </div>
-          <div class="mt-10 p-10 bg-gray-700 w-1/2 h-50">
+          <div class="mt-10 p-10 bg-gray-700 xl:w-1/2 h-50">
             <div class="h-80 grid place-content-center">
                 <img class="animate-appear" src="./img/enigmatic.png" ></img>
             </div>
@@ -71,12 +72,12 @@
                 <a href="https://leonalvarezz.github.io/Enigmatic/"><i class="fa-solid fa-code fa-fade text-3xl mt-4"></i></a>
             </div>
           </div>
-          <div class="mt-10 p-10 bg-gray-700 w-1/2 h-50">
+          <div class="mt-10 p-10 bg-gray-700 xl:w-1/2 xl:h-90">
             <div class="h-80 grid place-content-center">
                 <img class="animate-appear" src="./img/tasks.png" width="300px" height="300px" ></img>
             </div>
             <h1 class="text-2xl">Todo List</h1>
-            <div class="opacity-80 mt-10 h-72">
+            <div class="opacity-80 mt-10 xl:h-72 ">
                 <p>full-stack todo application is the perfect solution for anyone who wants to stay organized and on top of their to-do list. With its powerful task management features, you can easily add, delete, and update tasks to ensure that you're always on track. What's more, our app features a unique filtering system that makes it easy to know whether or not you've already added a specific task. As you type, the app automatically filters out any tasks that match the text you've entered, so
                     you can focus on adding only new tasks. And with its user-friendly interface, our app is easy to use 
                     no matter where you are or what you're doing.
