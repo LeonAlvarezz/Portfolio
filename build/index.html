@@ -100,26 +100,27 @@
 
       <section id="contact" class="w-4/5 m-auto font-nunito text-white pb-20">
         <h1 class="text-3xl mt-5 font-bold mb-5">Contact</h1>
-        <form action="https://portfolio-backend-jrcd.onrender.com/submit-form" method="POST">
+        <form action="https://portfolio-backend-qca9.onrender.com/submit-form" method="POST" onsubmit="submitForm()">
 
           <div class="flex flex-col">
                 <div class="flex sm:flex-row flex-col justify-between sm:gap-10 gap-3">
                   <div class="flex flex-col gap-3 w-full">
                     <label for="f_name">First Name</label>
-                    <input class="text-black p-1"type="text" id="f_name" name="f_name" required>
+                    <input class="text-black p-1"type="text" id="f_name" name="f_name" placeholder="Enter your first name..." required>
                   </div>
                   <div class="flex flex-col gap-3 w-full">
                     <label for="l_name">Last Name</label>
-                    <input class="text-black p-1" type="text" id="l_name" name="l_name" required>
+                    <input class="text-black p-1" type="text" id="l_name" name="l_name" placeholder="Enter your last name..."  required>
                   </div>
                 </div>
                 <div class="mt-3 flex flex-col gap-3">
                   <label for="email">Email</label>
-                  <input class="text-black p-1" type="email" id="email" name="email" required>
+                  <input class="text-black p-1" type="email" id="email" name="email" placeholder="Enter your email..." required>
                 </div>
                 <div class="mt-3 flex flex-col gap-3">
                   <label for="job">Job</label>
                   <select class="p-1 text-black font-nunito" name="job" id="job">
+                    <option value="" disabled selected>Select a job</option>
                     <option value="Web Developer">Web Developer</option>
                     <option value="Mobile Developer">Mobile Developer</option>
                     <option value="Graphic Design">Graphic Design</option>
@@ -128,10 +129,12 @@
                 </div>
                 <div class="mt-3 flex flex-col gap-3">
                   <label for="">Description</label>
-                  <textarea class="text-black p-1" id="description" name="description" rows="5"></textarea>
+                  <textarea placeholder="Enter your query..." class="text-black p-1" id="description" name="description" rows="5"></textarea>
                 </div>
                 <div class="flex justify-start">
-                  <button type="submit" class="pr-5 pl-5 pt-2 pb-2 bg-emerald-500 mt-5 hover:bg-emerald-700 rounded-sm">Submit</button>
+                  <button id="submitBtn" type="submit" class="pr-5 pl-5 pt-2 pb-2 bg-emerald-500 mt-5 hover:bg-emerald-700 rounded-sm">
+                     Submit
+                  </button>
                 </div>
               </div>
               
@@ -176,6 +179,11 @@
             top: sectionTop,
             behavior: 'smooth'
           });
+        }
+        function submitForm() {
+          var submitBtn = document.getElementById('submitBtn');
+          submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+          submitBtn.disabled = true;
         }
         </script>
 </body>
