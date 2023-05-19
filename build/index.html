@@ -32,15 +32,15 @@
                 <div class="flex justify-center sm:justify-start">
                   <button onclick="downloadFile()" class="p-4 bg-emerald-500 rounded-sm mt-4 hover:bg-emerald-700 animate-pulse transition-all">Download CV</button>
                 </div>
-                <div class="flex flex-row mt-5 gap-5">
+                <div class="flex flex-row sm:justify-start justify-center mt-5 gap-5">
                   <a href="https://github.com/LeonAlvarezz"><i class="fa-brands fa-github text-3xl"></i></a>
-                  <a href="https://www.facebook.com/leon.hong.0312"><i class="fa-brands fa-facebook text-3xl"></i></a>
+                  <a href="https://www.linkedin.com/in/hong-narethputponleu-a07391227"><i class="fa-brands fa-linkedin text-3xl"></i></a>
                   <a href="https://t.me/leon11037"><i class="fa-brands fa-telegram text-3xl"></i></a>
                 </div>
                 
               </div>
               <div class="flex justify-center">
-                <img class="animate-appear w-11/12 h-11/12" src="./img/pf.png" width={400} height={400}></img>
+                <img class="animate-appear sm:w-11/12 h-11/12 w-3/5 h-3/5" src="./img/pf.png"></img>
             </div>
           </div>
         </div>
@@ -147,7 +147,7 @@
       <script>
         function downloadFile() {
           const downloadLink = document.createElement('a');
-          downloadLink.setAttribute('href', 'https://drive.google.com/file/d/1trMv8Kkaz3JzWLfol4-UnHD9ryiP8kuI/view?usp=share_link');
+          downloadLink.setAttribute('href', 'https://drive.google.com/file/d/1IdeGJXsUIQ6lBBzJ122ATSdtiPfOBx5t/view?usp=sharing');
           downloadLink.setAttribute('download', '');
           downloadLink.style.display = 'none';
           document.body.appendChild(downloadLink);
